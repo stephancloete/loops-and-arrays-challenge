@@ -3,10 +3,12 @@
 //"console.log" the output, separated by a space
 //Add your code below
 let tasks = ['swim', 'study', 'eat', 'play', 'run', 'walk', 'sleep', 'stand', 'type', 'slide'];
-
+var display = "";
 for (x of tasks){
-    console.log(tasks);
+    display += x + " "; 
 }
+
+console.log(display);
 
 //Activity 2 - Edit the loop created above, to now calculate the sum of all the items leading up to 10. e.g. 1 + 2 + 3 = 6
 //console.log your output
