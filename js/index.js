@@ -14,6 +14,16 @@ console.log(display);
 //console.log your output
 //Add your code below
 
+let counter = 1;
+let counterTwo = 0;
+
+for (x of tasks){
+    let sum = counterTwo + counter;
+    console.log(counterTwo + " + " + counter + " = " +sum);
+    counter++;
+    counterTwo = sum; 
+}
+
 
 //Activity 3 - Using the tasks variable created above
 //Create a loop that performs the 15 times table
