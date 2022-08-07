@@ -70,11 +70,32 @@ for (x of timesTable){
 //Add your code below
 
 const average = timesTable.reduce((a, b) => a + b, 0) / timesTable.length;
-document.getElementById("update").innerHTML += "The average is: " + average;
+document.getElementById("update").innerHTML += "The average is: " + average + "<br>";
 
 //Bonus Activity
 //Repeat the output of what you produced in activity 6, this time by not using the .reduce function
 //Add your code below
+
+    /* This section is not working!!
+
+    var counterThree = 15;
+    var counterFour = 0;
+    var sumAll = 0;
+
+    for (x of timesTable){
+        let sumAlt = sumAll;
+        
+        
+        var sumAll = counterFour + counterThree;
+        console.log(counterFour + " + " + counterThree + " = " +sumAll);
+        counterThree + 15;
+        counterFour = sumAll;
+        
+        var total = sumAlt + sumAll;
+        console.log("total " + total + "= sumAlt " + sumAlt + "+ sumAll " + sumAll);
+    }
+    document.getElementById("update").innerHTML += "The average is: " + total/10;
+    */
 
 //Create a "for of" loop, looping through the values of your tasks variable created in activity 1
 //console.log the output
