@@ -2,20 +2,24 @@
 //Using the "for" loop display the value of each of these items
 //"console.log" the output, separated by a space
 //Add your code below
-let tasks = ['swim', 'study', 'eat', 'play', 'run', 'walk', 'sleep', 'stand', 'type', 'slide'];
-var display = "";
+
+const tasks = ['swim', 'study', 'eat', 'play', 'run', 'walk', 'sleep', 'stand', 'type', 'slide'];
+
+    
+let display = "";
+
 for (x of tasks){
     display += x + " "; 
 }
-
 console.log(display);
 
 //Activity 2 - Edit the loop created above, to now calculate the sum of all the items leading up to 10. e.g. 1 + 2 + 3 = 6
 //console.log your output
 //Add your code below
+console.log(" ");
 
-let counter = 1;
-let counterTwo = 0;
+var counter = 1;
+var counterTwo = 0;
 
 for (x of tasks){
     let sum = counterTwo + counter;
@@ -24,16 +28,39 @@ for (x of tasks){
     counterTwo = sum; 
 }
 
-
 //Activity 3 - Using the tasks variable created above
 //Create a loop that performs the 15 times table
 //Leading up to the "length" of your tasks variable
 //Add your code below
+console.log(" ");
 
+let multi = 1;
+let answer = 0;
+
+for (x of tasks){
+    answer = multi * 15;
+    console.log(multi + " x " + "15" + " = " + answer);
+    multi++
+}
 
 //Activity 4 - Edit your code in activity 3, by creating an array called timesTable
 //And store each value of the your fifteen times table in it
 //Add your code below
+console.log(" ");
+
+let timesTable = [];
+let multiTwo = 1;
+let answerTwo = 0;
+
+for (x of tasks){
+    answerTwo = multiTwo * 15;
+    timesTable.push(answerTwo);
+    multiTwo++
+}
+console.log(timesTable);
+
+
+
 
 
 //Activity 5 - Using the array you created in the Activity 4, loop through the array and print each value to the console.
