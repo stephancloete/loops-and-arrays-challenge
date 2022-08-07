@@ -59,17 +59,18 @@ for (x of tasks){
 }
 console.log(timesTable);
 
-
-
-
-
 //Activity 5 - Using the array you created in the Activity 4, loop through the array and print each value to the console.
 //Add your code below
 
+for (x of timesTable){
+    document.getElementById("update").innerHTML += x + "<br>";
+}
 
 //Activty 6 - Use the .reduce() built-in method to calculate the average of the array created in Activity 4.
 //Add your code below
 
+const average = timesTable.reduce((a, b) => a + b, 0) / timesTable.length;
+document.getElementById("update").innerHTML += "The average is: " + average;
 
 //Bonus Activity
 //Repeat the output of what you produced in activity 6, this time by not using the .reduce function
